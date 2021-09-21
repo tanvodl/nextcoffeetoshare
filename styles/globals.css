@@ -29,12 +29,14 @@ header span {
   line-height: 1em;
 }
 header span:first-child {
-  font-size: 1em;
+  font-size: 0.44em;
   font-weight: 400;
+  padding-bottom: 5px;
 }
 header span:last-child {
   font-size: 1.5em;
   font-weight: 800;
+  padding-bottom: 15px;
 }
 header h2 {
   font-size: 1.2em;
