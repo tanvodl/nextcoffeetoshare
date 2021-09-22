@@ -1,6 +1,6 @@
 import { createClient } from "contentful"
+import Layout from "../components/Layout"
 import PostCard from "../components/PostCard"
-
 
 export async function getStaticProps() {
 
@@ -18,7 +18,6 @@ export async function getStaticProps() {
   } 
 
 }
-
 
 export default function blogPosts({ blogPosts }) {
   console.log(blogPosts)

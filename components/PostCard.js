@@ -31,7 +31,7 @@ export default function PostCard({ post }) {
                     <Link href={'/blogposts/' + slug}><a>Xem Thêm</a></Link>
                 </div>
             </div>
-            <style jsx>{`
+            {/* <style jsx>{`
                 .content {
                     background: #fff;
                     box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
@@ -63,7 +63,7 @@ export default function PostCard({ post }) {
                     text-decoration: none;
                     border-radius: 25px 0px 0px 0px;
                 }
-            `}</style>
+            `}</style> */}
         </div>
     )
 }
