@@ -1,6 +1,7 @@
 import { createClient } from "contentful"
 import PostCard from "../components/PostCard"
 
+
 export async function getStaticProps() {
 
   const client = createClient({
@@ -22,12 +23,12 @@ export async function getStaticProps() {
 export default function blogPosts({ blogPosts }) {
   console.log(blogPosts)
   return (
-    <div className="post-list">
+    <div className="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl">
       {blogPosts.map(post => (
         <PostCard key={post.sys.id} post={post} />
       ))}
 
-      <style jsx>{`
+      {/* <style jsx>{`
         .post-list {
           display: grid;
           grid-template-columns: 1fr 1fr;
@@ -35,7 +36,7 @@ export default function blogPosts({ blogPosts }) {
         }
       `}
 
-      </style>
+      </style> */}
 
     </div>
   )

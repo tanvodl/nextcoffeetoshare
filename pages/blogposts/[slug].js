@@ -34,8 +34,7 @@ const renderOptions = {
       // target the contentType of the EMBEDDED_ENTRY to display as you need
       if (node.data.target.sys.contentType.sys.id === "blogPost") {
         return (
-          <a href={`/blog/${node.data.target.fields.slug}`}>
-            {node.data.target.fields.title}
+          <a href={`/blog/${node.data.target.fields.slug}`}>            {node.data.target.fields.title}
           </a>
         );
       }
@@ -70,8 +69,8 @@ const renderOptions = {
       return (
         <img
           src={`https://${node.data.target.fields.file.url}`}
-          height="100%"//{node.data.target.fields.file.details.image.height}
-          width="100%"//{node.data.target.fields.file.details.image.width}
+          height={node.data.target.fields.file.details.image.height}
+          width={node.data.target.fields.file.details.image.width}
           alt={node.data.target.fields.description}
         />
       );
@@ -107,16 +106,12 @@ export default function BlogDetails({ post }) {
       <div className="info">
         <h3> {description} </h3>
       </div> 
-      <div className="content">
-        <div className="richtext"> {documentToReactComponents(content,renderOptions)} </div>
+      <div className="ml-3">
+        <div className="text-sm font-medium text-gray-900"> {documentToReactComponents(content,renderOptions)} </div>
       </div>
-      <style jsx>{`
+      {/* <style jsx>{`
         .richtext {
           display: block;
-          width: 100%;
-        }
-        .img[Attributes Style] {
-          width: 10px;
         }
         h2,h3 {
           text-transform: uppercase;
@@ -125,11 +120,11 @@ export default function BlogDetails({ post }) {
           margin: 0;
           background: #fff;
           display: inline-block;
-          padding: 20px 50px 20px;
+          padding: 20px;
           position: relative;
           top: -60px;
           left: -10px;
-          //transform: rotateZ(-1deg);
+          transform: rotateZ(-1deg);
           box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
         }
         .info p {
@@ -141,9 +136,8 @@ export default function BlogDetails({ post }) {
         .info span:last-child::after {
           content: ".";
         }
-      `}</style>
+      `}</style> */}
     
     </div>
   )
 }
-
