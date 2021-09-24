@@ -1,0 +1,90 @@
+@font-face {
+    font-family: 'Cali Font Book';
+    src: local('Cali Font Book'), local('CaliFont-Book'),
+        url('CaliFont-Book.woff2') format('woff2'),
+        url('CaliFont-Book.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cali Font';
+    src: local('Cali Font Bold Bold'), local('CaliFontBold-Bold'),
+        url('CaliFontBold-Bold.woff2') format('woff2'),
+        url('CaliFontBold-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cali Font Book Oblique';
+    src: local('Cali Font Book Oblique'), local('CaliFont-BookOblique'),
+        url('CaliFont-BookOblique.woff2') format('woff2'),
+        url('CaliFont-BookOblique.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cali Font Demi Oblique';
+    src: local('Cali Font Demi Oblique'), local('CaliFont-DemiOblique'),
+        url('CaliFont-DemiOblique.woff2') format('woff2'),
+        url('CaliFont-DemiOblique.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cali Font Extra Light Oblique';
+    src: local('Cali Font Extra Light Oblique'), local('CaliFont-ExtraLightOblique'),
+        url('CaliFont-ExtraLightOblique.woff2') format('woff2'),
+        url('CaliFont-ExtraLightOblique.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cali Font Demi';
+    src: local('Cali Font Demi'), local('CaliFont-Demi'),
+        url('CaliFont-Demi.woff2') format('woff2'),
+        url('CaliFont-Demi.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cali Font Extra';
+    src: local('Cali Font Extra Light'), local('CaliFont-ExtraLight'),
+        url('CaliFont-ExtraLight.woff2') format('woff2'),
+        url('CaliFont-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cali Font Medium Oblique';
+    src: local('Cali Font Medium Oblique'), local('CaliFont-MediumOblique'),
+        url('CaliFont-MediumOblique.woff2') format('woff2'),
+        url('CaliFont-MediumOblique.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cali Font';
+    src: local('Cali Font Medium'), local('CaliFont-Medium'),
+        url('CaliFont-Medium.woff2') format('woff2'),
+        url('CaliFont-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+

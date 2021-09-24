@@ -7,10 +7,10 @@ export function PostCard({ post }) {
    
     return (
         <div className="md:grid-cols-3">
-            <div className="relative">
+            <div className="relative hover:bg-yellow-500">
                 <Image 
+                    className="object-cover cursor-pointer"
                     src={'https:'+ thumbnail.fields.file.url}
-                    className="object-cover"                    
                     width={'680px'}
                     height={'400px'}
                     href={'/posts/' + slug}
@@ -18,16 +18,15 @@ export function PostCard({ post }) {
                 />
             </div>
             <div className="content">
-                <div className="mb-5 uppercase tracking-wide text-sm text-indigo-500 font-semibold">
+                <div className="pb-5 uppercase tracking-wide text-sm font-semibold">
                     <Link href={'/posts/' + slug}>
-                        <h4>{title}</h4>
+                        <h2 className="pt-2 hover:text-yellow-600 cursor-pointer">{title}</h2>
                     </Link>
                 </div>
                 <div>
-                    <p className= "mt-1 text-gray-500">{description}</p>
-                </div>
-                <div className="actions">
-                    <Link href={'/posts/' + slug}><a>Xem Thêm</a></Link>
+                    <p className= "text-gray-500">{description}
+                    {/* <Link href={'/posts/' + slug}><strong classname="font-bold hover:text-yellow-600">   ...[Xem Thêm]</strong></Link> */}
+                    </p>
                 </div>
             </div>
             {/* <style jsx>{`

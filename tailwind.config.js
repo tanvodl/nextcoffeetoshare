@@ -2,12 +2,13 @@ module.exports = {
   purge: ['./pages/**/*.{js,ts,jsx,tsx}','./components/**/*.{js,ts,jsx,tsx}'],
   darkMode: false, // or 'media' or 'class'
   theme: {
-     extend: {},
+     extend: {
+     },
   },
   variants: {
     extend: {},
   },
-  plugins: []
+  plugins: [require('tailwindcss-font-inter')]
 }
 
 module.exports = {
@@ -29,8 +30,8 @@ module.exports = {
     //   pink: color.fuchsia,
     // },
     fontFamily: {
-      sans: ['Graphik', 'sans-serif'],
-      serif: ['Merriweather', 'serif'],
+      sans: ['Noto Sans', 'sans-serif'],
+      
     },
     extend: {
       spacing: {
@@ -62,19 +63,6 @@ module.exports = {
     require('tailwindcss-children'),
   ],
 }
-
-// module.exports = {
-//   presets: [
-//     require('@acmecorp/base-tailwind-config')
-//   ],
-
-//   // Project-specific customizations
-//   theme: {
-//     //...
-//   },
-//   // ...
-// }
-
 module.exports = {
   prefix: 'tw-',
 }
@@ -102,15 +90,18 @@ module.exports = {
       xl: '1440px',
     },
     colors: {
-      gray: colors.coolGray,
-      blue: colors.sky,
-      red: colors.rose,
-      pink: colors.fuchsia,
+      transparent: 'transparent',
+      current: 'currentColor',
+      black: colors.black,
       white: colors.white,
+      gray: colors.coolGray,
+      //indigo: colors.indigo,
+      red: colors.rose,
+      yellow: colors.amber,
     },
     fontFamily: {
-      sans: ['Noto Sans', 'sans-serif'],
-      serif: ['Merriweather', 'serif'],
+      sans: ['Inter', 'sans-serif'],
+      
     },
     extend: {
       spacing: {

@@ -23,5 +23,8 @@
     "react-functional": "^3.0.2",
     "tailwindcss": "^2.2.15",
     "tailwindcss-children": "^2.1.0"
+  },
+  "devDependencies": {
+    "tailwindcss-font-inter": "^3.0.0"
   }
 }

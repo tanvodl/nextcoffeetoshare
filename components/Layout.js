@@ -13,8 +13,9 @@ export default function Layout({ children }) {
         { children }
       </div>
 
-      <footer className="m-1">
-        <p className="text-center">COFFEE TO SHARE Copyright © 2021. Alright Reserved</p>
+      <footer className="m-1 py-5 bg-black">
+        <h1 className="text-center text-white">COFFEE TO SHARE </h1>
+        <p className="text-center text-white">Copyright © 2021. Alright Reserved</p>
       </footer>
     </div>
   )
