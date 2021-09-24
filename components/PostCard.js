@@ -1,24 +1,21 @@
 import Link from 'next/link'
 import Image from 'next/image'
 
+
 export function PostCard({ post }) {
     const { title, slug, description, thumbnail } = post.fields
-
+   
     return (
-        <div className="content">
-            <div className="featured">
-            <Link href={'/posts/' + slug}>
-            <a>
-            <Image 
+        <div className="">
+            <div className="relative">
+                <Image 
                     src={'https:'+ thumbnail.fields.file.url}
-                    width={thumbnail.fields.file.details.image.width}
-                    height={thumbnail.fields.file.details.image.height}
+                    className="object-cover"                    
+                    width={'680px'}
+                    height={'400px'}
                     href={'/posts/' + slug}
+                    
                 />
-            </a>
-            </Link>
-            
-                
             </div>
             <div className="content">
                 <div className="mb-5 uppercase tracking-wide text-sm text-indigo-500 font-semibold">

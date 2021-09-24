@@ -106,9 +106,10 @@ module.exports = {
       blue: colors.sky,
       red: colors.rose,
       pink: colors.fuchsia,
+      white: colors.white,
     },
     fontFamily: {
-      sans: ['Graphik', 'sans-serif'],
+      sans: ['Noto Sans', 'sans-serif'],
       serif: ['Merriweather', 'serif'],
     },
     extend: {

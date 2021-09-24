@@ -28,7 +28,7 @@ export async function getStaticProps() {
 export default function blogPosts({ blogPosts }) {
   console.log(blogPosts)
   return (
-    <div className="grid grid-cols-2 bg-gradient-to-tr max-w-100 mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl">
+    <div className="md:flex md:grid-cols-3 md:gap-14">
       {blogPosts.map(post => (
         <PostCard key={post.sys.id} post={post} />
       ))}

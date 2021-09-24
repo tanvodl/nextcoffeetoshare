@@ -9,12 +9,12 @@ export default function Layout({ children }) {
         <Navbar></Navbar>
       </header>
       
-      <div className="bg-gray-50">
+      <div className="m-20 ">
         { children }
       </div>
 
-      <footer>
-        <p>Copyright 2021 Coffee To Share</p>
+      <footer className="m-1">
+        <p className="text-center">COFFEE TO SHARE Copyright © 2021. Alright Reserved</p>
       </footer>
     </div>
   )
