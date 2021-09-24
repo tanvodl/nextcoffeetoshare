@@ -6,7 +6,7 @@ export function PostCard({ post }) {
     const { title, slug, description, thumbnail } = post.fields
    
     return (
-        <div className="">
+        <div className="md:grid-cols-3">
             <div className="relative">
                 <Image 
                     src={'https:'+ thumbnail.fields.file.url}

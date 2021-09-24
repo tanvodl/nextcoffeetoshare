@@ -28,7 +28,7 @@ export async function getStaticProps() {
 export default function blogPosts({ blogPosts }) {
   console.log(blogPosts)
   return (
-    <div className="md:flex md:grid-cols-3 md:gap-14">
+    <div className="grid grid-cols-1 md:grid-cols-3 max-w-100 overflow-hidden md:max-w-screen-2xl gap-10">
       {blogPosts.map(post => (
         <PostCard key={post.sys.id} post={post} />
       ))}
