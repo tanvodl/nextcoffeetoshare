@@ -1,19 +1,19 @@
 import Link from 'next/link'
 import Image from 'next/image'
 
-export default function PostCard({ post }) {
+export function PostCard({ post }) {
     const { title, slug, description, thumbnail } = post.fields
 
     return (
-        <div className="card">
+        <div className="content">
             <div className="featured">
-            <Link href={'/blogposts/' + slug}>
+            <Link href={'/posts/' + slug}>
             <a>
             <Image 
                     src={'https:'+ thumbnail.fields.file.url}
                     width={thumbnail.fields.file.details.image.width}
                     height={thumbnail.fields.file.details.image.height}
-                    href={'/blogposts/' + slug}
+                    href={'/posts/' + slug}
                 />
             </a>
             </Link>
@@ -21,14 +21,16 @@ export default function PostCard({ post }) {
                 
             </div>
             <div className="content">
-                <div className="info">
-                    <Link href={'/blogposts/' + slug}>
+                <div className="mb-5 uppercase tracking-wide text-sm text-indigo-500 font-semibold">
+                    <Link href={'/posts/' + slug}>
                         <h4>{title}</h4>
                     </Link>
-                    <p>{description}</p>
+                </div>
+                <div>
+                    <p className= "mt-1 text-gray-500">{description}</p>
                 </div>
                 <div className="actions">
-                    <Link href={'/blogposts/' + slug}><a>Xem Thêm</a></Link>
+                    <Link href={'/posts/' + slug}><a>Xem Thêm</a></Link>
                 </div>
             </div>
             {/* <style jsx>{`

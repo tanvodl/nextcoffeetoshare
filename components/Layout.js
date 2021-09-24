@@ -1,20 +1,15 @@
 import Link from 'next/link'
+import Navbar from '../components/Navbar'
+import Hero from '../components/Hero'
 
 export default function Layout({ children }) {
   return (
     <div className="layout">
-      <header>
-        <Link href="/">
-          <a>
-            <h1>
-              <span>Chia sẻ kiến thức Digital Marketing và Kiếm tiền online</span>
-              <span>COFFEE TO SHARE</span>
-            </h1>            
-          </a>
-        </Link>
+      <header className="mb-0">
+        <Navbar></Navbar>
       </header>
-
-      <div className="page-content">
+      
+      <div className="bg-gray-50">
         { children }
       </div>
 
