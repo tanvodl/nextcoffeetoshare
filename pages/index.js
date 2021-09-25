@@ -2,12 +2,6 @@ import { createClient } from "contentful"
 import {PostCard} from "../components/PostCard"
 import Hero from "../components/Hero"
 
-export function Herosection(){
-  return (
-    <Hero></Hero>
-  )
-}
-
 export async function getStaticProps() {
 
   const client = createClient({
@@ -16,7 +10,6 @@ export async function getStaticProps() {
   })
 
   const res = await client.getEntries({ content_type: 'blogPost'})
-
   return {
     props: {
       blogPosts: res.items
