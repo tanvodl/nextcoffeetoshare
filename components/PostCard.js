@@ -5,15 +5,17 @@ import Image from 'next/image'
 export function PostCard({ post }) {
     const { title, slug, description, thumbnail, category } = post.fields
     return (
-        <div className="md:grid-cols-3">
+        <div className="md:grid-cols-3" >
             <div className="relative hover:bg-yellow-500">
+                <a href={'/posts/' + slug}>
                 <Image 
-                    className="object-cover cursor-pointer"
+                    className="object-cover cursor-pointer transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 ..."
                     src={'https:'+ thumbnail.fields.file.url}
                     width={'680px'}
                     height={'400px'}
-                    href={'/posts/' + slug}
+                    //href={'/posts/' + slug}
                 />
+                </a>
             </div>
             <div className="content">
                 <div className="pb-5 uppercase tracking-wide text-sm font-semibold">
@@ -22,8 +24,8 @@ export function PostCard({ post }) {
                     </Link>
                 </div>
                 <div>
-                    <p className= "text-gray-500">{description}
-                    </p>
+                    <a href={'/posts/' + slug} className= "text-gray-500">{description}
+                    </a>
                 </div>
             </div>
             <div className="category">               

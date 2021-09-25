@@ -100,12 +100,12 @@ function classNames(...classes) {
 
 export default function Example() {
   return (
-    <Popover className="relative bg-white">
-      <div className="max-w-screen-2xl mx-auto px-4 sm:px-6">
-        <div className="flex justify-between items-center border-b-2 border-gray-100 py-6 md:justify-start md:space-x-10 px-14">
-          <div className="flex justify-start lg:w-0 lg:flex-1">
+    <Popover className="md:relative bg-white">
+      <div className="md:max-w-screen-2xl md:px-4">
+        <div className="flex justify-between items-center py-6 md:justify-between md:space-x-10 md:space-y-2">
+          <div className="flex justify-start">
             <a href="./">
-              <span className="text-black font-semibold text-2xl">COFFEE TO SHARE</span>
+              <h1 className="text-black font-semibold text-2xl md:text-3xl md:tracking-tighter">COFFEE TO SHARE</h1>
               {/* <img
                 className="h-8 w-auto sm:h-10"
                 src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
@@ -266,14 +266,11 @@ export default function Example() {
             </a>
           </Popover.Group>
           <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
-            {/* <a href="#" className="whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900">
-              
-            </a> */}
             <a
               href="#"
-              className="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-mediumt text-white bg-gray-900 hover:bg-indigo-700"
+              className="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-mediumt text-white bg-yellow-800 hover:bg-indigo-700"
             >
-              Đăng kí nhận tin
+              NHẬN TIN HAY!
             </a>
           </div>
         </div>

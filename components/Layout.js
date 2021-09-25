@@ -5,11 +5,11 @@ import Hero from '../components/Hero'
 export default function Layout({ children }) {
   return (
     <div className="layout">
-      <header className="mb-0">
+      <header className="mx-5 md:mx-20">
         <Navbar></Navbar>
       </header>
       
-      <div className="m-20 ">
+      <div className="m-5 md:m-20 md:px-5">
         { children }
       </div>
 
