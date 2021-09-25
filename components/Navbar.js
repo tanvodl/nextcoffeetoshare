@@ -19,55 +19,74 @@ import { ChevronDownIcon } from '@heroicons/react/solid'
 
 const solutions = [
   {
-    name: 'Analytics',
-    description: 'Get a better understanding of where your traffic is coming from.',
+    name: 'Làm thế nào để bắt đầu kiếm tiền online',
+    description: 'Kiến thức cơ bản cần biết để bắt đầu',
     href: '#',
     icon: ChartBarIcon,
   },
   {
-    name: 'Engagement',
-    description: 'Speak directly to your customers in a more meaningful way.',
+    name: 'Cách kiếm tiền từ Blog',
+    description: 'Bạn sẽ bất ngờ khi biết viết Blog có thể kiếm tiền',
     href: '#',
     icon: CursorClickIcon,
   },
-  { name: 'Security', description: "Your customers' data will be safe and secure.", href: '#', icon: ShieldCheckIcon },
+  { name: 'Ý tưởng kinh doanh', 
+    description: "Cùng chia sẻ các ý tưởng kinh doanh nhé!", 
+    href: '#', 
+    icon: ShieldCheckIcon },
   {
-    name: 'Integrations',
-    description: "Connect with third-party tools that you're already using.",
+    name: 'Các chương trình Affiliate OK',
+    description: "Các chương trình Affiliate có thể kiếm tiền ổn định",
     href: '#',
     icon: ViewGridIcon,
   },
-  {
-    name: 'Automations',
-    description: 'Build strategic funnels that will drive your customers to convert',
-    href: '#',
-    icon: RefreshIcon,
-  },
 ]
 const callsToAction = [
-  { name: 'Watch Demo', href: '#', icon: PlayIcon },
-  { name: 'Contact Sales', href: '#', icon: PhoneIcon },
+  { name: 'Kiếm Tiền Ngay!', href: '#', icon: PlayIcon },
+  { name: 'Cà phê với tụi Mình!', href: '#', icon: PhoneIcon },
 ]
 const resources = [
   {
-    name: 'Help Center',
-    description: 'Get all of your questions answered in our forums or contact support.',
+    name: 'Website & Hosting',
+    description: 'Các khái niệm cơ bản về Web và Host để bạn bắt đầu',
     href: '#',
     icon: SupportIcon,
   },
   {
-    name: 'Guides',
-    description: 'Learn how to maximize our platform to get the most out of it.',
+    name: 'Website Builders',
+    description: 'Tổng hợp các công cụ làm web không cần biết về code',
     href: '#',
     icon: BookmarkAltIcon,
   },
   {
-    name: 'Events',
-    description: 'See what meet-ups and other events we might be planning near you.',
+    name: 'Landing Pages',
+    description: 'Tất tần tật về Landing Page - Trang đích bùng nổ đơn hàng',
     href: '#',
     icon: CalendarIcon,
   },
-  { name: 'Security', description: 'Understand how we take your privacy seriously.', href: '#', icon: ShieldCheckIcon },
+  { name: 'Email Marketing', 
+    description: 'Kiến thức, công cụ Email Marketing', 
+    href: '#', 
+    icon: ShieldCheckIcon 
+  },
+
+  { name: 'CRM', 
+    description: 'CRM cho doanh nghiệp vừa và nhỏ', 
+    href: '#', 
+    icon: ShieldCheckIcon 
+  },
+
+  { name: 'Automation Marketing', 
+    description: 'Đi ngủ vẫn có thể kiếm tiền với Automation Marketing', 
+    href: '#', 
+    icon: ShieldCheckIcon 
+  },
+
+  { name: 'SEO', 
+    description: 'Kiến thức bao la về SEO', 
+    href: '#', 
+    icon: ShieldCheckIcon 
+  },
 ]
 const recentPosts = [
   { id: 1, name: 'Boost your conversion rate', href: '#' },
@@ -129,7 +148,7 @@ export default function Example() {
                     leaveFrom="opacity-100 translate-y-0"
                     leaveTo="opacity-0 translate-y-1"
                   >
-                    <Popover.Panel className="absolute z-10 -ml-4 mt-3 transform px-2 w-screen max-w-md sm:px-0 lg:ml-0 lg:left-1/2 lg:-translate-x-1/2">
+                    <Popover.Panel className="absolute z-0 md:z-50 -ml-4 mt-3 transform px-2 w-screen max-w-md sm:px-0 lg:ml-0 lg:left-1/2 lg:-translate-x-1/2">
                       <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
                         <div className="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8">
                           {solutions.map((item) => (
@@ -196,7 +215,7 @@ export default function Example() {
                     leaveFrom="opacity-100 translate-y-0"
                     leaveTo="opacity-0 translate-y-1"
                   >
-                    <Popover.Panel className="absolute z-10 left-1/2 transform -translate-x-1/2 mt-3 px-2 w-screen max-w-md sm:px-0">
+                    <Popover.Panel className="absolute z-0 md:z-50 left-1/2 transform -translate-x-1/2 mt-3 px-2 w-screen max-w-md sm:px-0">
                       <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
                         <div className="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8">
                           {resources.map((item) => (
@@ -215,7 +234,7 @@ export default function Example() {
                         </div>
                         <div className="px-5 py-5 bg-gray-50 sm:px-8 sm:py-8">
                           <div>
-                            <h3 className="text-sm tracking-wide font-medium text-gray-500 uppercase">Recent Posts</h3>
+                            <h3 className="text-sm tracking-wide font-medium text-gray-500 uppercase">Bài viết mới nhất</h3>
                             <ul role="list" className="mt-4 space-y-4">
                               {recentPosts.map((post) => (
                                 <li key={post.id} className="text-base truncate">
