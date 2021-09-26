@@ -36,7 +36,6 @@ export default function blogPosts({ blogPosts }) {
     <div className="grid grid-cols-1 md:grid-cols-3 max-w-100 overflow-hidden md:max-w-screen-2xl gap-11">
       {blogPosts.map(post => (
         <PostCard key={post.sys.id} post={post}/>
-       
       ))}
     </div>
   )

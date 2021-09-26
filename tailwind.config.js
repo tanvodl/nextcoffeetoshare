@@ -92,12 +92,25 @@ module.exports = {
     colors: {
       transparent: 'transparent',
       current: 'currentColor',
-      black: colors.black,
-      white: colors.white,
-      gray: colors.coolGray,
       //indigo: colors.indigo,
-      red: colors.rose,
-      yellow: colors.amber,
+      //red: colors.rose,
+      yellow: colors.yellow,
+      pink: colors.pink,
+      rose: colors.rose,
+      teal: colors.teal,
+      orange: colors.orange,
+      amber: colors.amber,
+      black: {
+        DEFAULT: '#212123',
+      },
+      white: colors.white,
+      gray: {
+        DEFAULT: '#616063',
+      },
+      brown: {
+        DEFAULT: '#a0583c',
+        lighter: '#c08267',
+      },
     },
     fontFamily: {
       sans: ['Inter', 'sans-serif'],
