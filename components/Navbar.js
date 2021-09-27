@@ -105,12 +105,12 @@ export default function Example() {
         <div className="flex justify-between items-center py-6 md:justify-between md:space-x-10 md:space-y-2">
           <div className="flex justify-start">
             <a href="./">
-              <h1 className="text-black font-semibold text-2xl md:text-3xl md:tracking-tighter">COFFEE TO SHARE</h1>
-              {/* <img
-                className="h-8 w-auto sm:h-10"
-                src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
-                alt=""
-              /> */}
+              {/* <h1 className="text-black font-semibold text-2xl md:text-3xl md:tracking-tighter">COFFEE TO SHARE</h1> */}
+              <img
+                className="h-8 w-auto sm:h-6 md:pr-20"
+                src="https://svgshare.com/i/aYg.svg"
+                alt="Coffee To Share"
+              />
             </a>
           </div>
           <div className="-mr-2 -my-2 md:hidden">

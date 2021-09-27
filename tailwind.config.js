@@ -3,7 +3,10 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
      extend: {
+      fontFamily: {
+        sans: ['CaliFont', 'sans-serif'],
      },
+    }
   },
   variants: {
     extend: {},
@@ -29,10 +32,10 @@ module.exports = {
     //   red: color.rose,
     //   pink: color.fuchsia,
     // },
-    fontFamily: {
-      sans: ['Noto Sans', 'sans-serif'],
+    // fontFamily: {
+    //   sans: ['Noto Sans', 'sans-serif'],
       
-    },
+    // },
     extend: {
       spacing: {
         '128': '32rem',
@@ -112,10 +115,10 @@ module.exports = {
         lighter: '#c08267',
       },
     },
-    fontFamily: {
-      sans: ['Inter', 'sans-serif'],
+    // fontFamily: {
+    //   sans: ['Inter', 'sans-serif'],
       
-    },
+    // },
     extend: {
       spacing: {
         '128': '32rem',

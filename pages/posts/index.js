@@ -16,15 +16,15 @@ export async function getStaticProps() {
   } 
 }
 
-export async function getStaticCate({ cate }) {
-  const {items} = await client.getEntries ({
-    content_type: 'blogPost',
-    'fields.category': cate.fields.category
-  })
-  return {
-    props: { danhmuc: items[0] }
-  }
-}
+// export async function getStaticCate({ cate }) {
+//   const {items} = await client.getEntries ({
+//     content_type: 'blogPost',
+//     'fields.category': cate.fields.category
+//   })
+//   return {
+//     props: { danhmuc: items[0] }
+//   }
+// }
 
 
 

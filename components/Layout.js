@@ -10,7 +10,9 @@ export default function Layout({ children }) {
           <Navbar></Navbar>
         </header>
       </div>
-      
+      <div className="mx-5 md:mx-20 md:px-5 h-screen">
+          <Hero></Hero>
+      </div>
       <div className="m-5 md:m-20 md:px-5">
         { children }
       </div>
