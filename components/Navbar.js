@@ -30,7 +30,7 @@ const solutions = [
     href: '#',
     icon: CursorClickIcon,
   },
-  { name: 'Ý tưởng kinh doanh', 
+  { name: 'Thanh Tuấn đẹp trai', 
     description: "Cùng chia sẻ các ý tưởng kinh doanh nhé!", 
     href: '#', 
     icon: ShieldCheckIcon },

@@ -23,7 +23,8 @@
     "react-functional": "^3.0.2",
     "react-icons": "^4.2.0",
     "react-slideshow-image": "^3.5.1",
-    "tailwindcss-children": "^2.1.0"
+    "tailwindcss-children": "^2.1.0",
+    "vercel": "^23.1.2"
   },
   "devDependencies": {
     "@svgr/webpack": "^5.5.0",
