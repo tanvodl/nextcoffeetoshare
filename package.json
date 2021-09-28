@@ -21,6 +21,7 @@
     "react-bootstrap": "1.0.1",
     "react-dom": "17.0.1",
     "react-functional": "^3.0.2",
+    "react-icons": "^4.2.0",
     "react-slideshow-image": "^3.5.1",
     "tailwindcss-children": "^2.1.0"
   },
